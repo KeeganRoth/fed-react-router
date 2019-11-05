@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 class GiphyPage extends Component {
+  componentDidMount() {
+    console.log("mounted");
+  }
   render() {
     return (
       <main>

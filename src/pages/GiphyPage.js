@@ -3,6 +3,11 @@ class GiphyPage extends Component {
   componentDidMount() {
     console.log("mounted");
   }
+
+  componentWillUnmount() {
+    console.log("unmounting, not used often.  Maybe sockets");
+  }
+
   render() {
     return (
       <main>

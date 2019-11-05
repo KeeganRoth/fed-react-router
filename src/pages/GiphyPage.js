@@ -1,5 +1,5 @@
-import React from "react";
-class GiphyPage extends React.Component {
+import React, { Component } from "react";
+class GiphyPage extends Component {
   render() {
     return (
       <main>

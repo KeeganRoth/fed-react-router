@@ -4,11 +4,15 @@ import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 
 import "./styles.css";
 import HomePage from "./pages/HomePage";
+import AboutPage from "./pages/AboutPage";
 
 function App() {
   return (
     <Router>
       <Switch>
+        <Route path="/about">
+          <AboutPage />
+        </Route>
         <Route path="/">
           <HomePage />
         </Route>

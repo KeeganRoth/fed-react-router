@@ -1,14 +1,19 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 
 import "./styles.css";
+import { HomePage } from "./pages/HomePage";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
-    </div>
+    <Router>
+      <Switch>
+        <Route path="/">
+          <HomePage />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 
